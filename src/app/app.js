@@ -1,25 +1,42 @@
 import angular from 'angular';
+import 'angular-route';
+import 'angular-messages';
 
-import '../style/app.css';
+import './app.scss';
 
-let app = () => {
-  return {
-    template: require('./app.html'),
-    controller: 'AppCtrl',
-    controllerAs: 'app'
-  }
-};
+// Components
+import './components/landing-page/landing-page';
+import './components/navigation/navigation';
+import './components/registration/registration';
 
-class AppCtrl {
-  constructor() {
-    this.url = 'https://github.com/preboot/angular-webpack';
-  }
-}
 
-const MODULE_NAME = 'app';
+var app;
 
-angular.module(MODULE_NAME, [])
-  .directive('app', app)
-  .controller('AppCtrl', AppCtrl);
+(function() {
 
-export default MODULE_NAME;
+    app = angular.module('app', [
+        // Components
+        'landing',
+        'navigation',
+        'registration',
+
+        // Other Stuff
+        'ngRoute',
+        'ngMessages'
+    ]);
+    
+    app.config( ($routeProvider) => {
+        
+        $routeProvider
+            .when('/', {
+                template: '<landing-page></landing-page>'
+            })
+            .when('/registration', {
+                template: '<registration></registration>'
+            })
+        
+    });
+
+})();
+
+export default app;

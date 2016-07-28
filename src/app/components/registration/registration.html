@@ -1,0 +1,32 @@
+<div>
+
+    <div>
+        So you're interested in the hackathon...
+        Let's get your email first!
+    </div>
+
+    <ng-form name="reg.accountForm">
+
+        <label>
+            Email
+        </label>
+
+        <input type="text"
+               id="intEmail"
+               name="intEmail"
+               ng-model="intEmail"
+               ng-required="true" />
+
+        <div ng-messages="reg.accountForm.intEmail.$error">
+            <div ng-message="required">
+                We need your email
+            </div>
+        </div>
+
+        <button ng-disabled="reg.accountForm.$invalid">
+            Next
+        </button>
+
+    </ng-form>
+
+</div>

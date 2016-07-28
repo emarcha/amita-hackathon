@@ -1,7 +1,7 @@
 {
-  "name": "angular-webpack-workflow",
+  "name": "amita-hackathon",
   "version": "1.0.0",
-  "description": "A workflow for Angular made with Webpack",
+  "description": "Angular app for the Amita Hackathon",
   "scripts": {
     "build": "rimraf dist && webpack --bail --progress --profile",
     "server": "webpack-dev-server --history-api-fallback --inline --progress",
@@ -11,16 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Foxandxss/angular-webpack-workflow.git"
+    "url": "https://github.com/emarcha/amita-hackathon.git"
   },
-  "author": "Jesus Rodriguez",
-  "license": "MIT",
+  "author": "Emmanuel Marcha",
+  "license": "Copyright Amita Hackathon",
   "bugs": {
-    "url": "https://github.com/Foxandxss/angular-webpack-workflow/issues"
+    "url": "https://github.com/emarcha/amita-hackathon/issues"
   },
-  "homepage": "https://github.com/Foxandxss/angular-webpack-workflow",
+  "homepage": "https://github.com/emarcha/amita-hackathon",
   "dependencies": {
-    "angular": "^1.5.0"
+    "angular": "^1.5.0",
+    "angular-messages": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7"
   },
   "devDependencies": {
     "angular-mocks": "^1.5.0",
@@ -43,11 +46,13 @@
     "karma-spec-reporter": "0.0.26",
     "karma-webpack": "^1.7.0",
     "node-libs-browser": "^1.0.0",
+    "node-sass": "^3.8.0",
     "null-loader": "^0.1.1",
     "phantomjs-prebuilt": "^2.1.4",
     "postcss-loader": "^0.9.1",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.5.1",
+    "sass-loader": "^4.0.0",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
