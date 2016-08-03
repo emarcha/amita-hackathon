@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en" ng-app="HackathonReg">
+<head>
+
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Cisco Internet of Things World Forum: Hackathon Registration</title>
+    <meta name="description" content="The Internet of Things World Forum (IoTWF) is an exclusive industry event, hosted by Cisco. The event brings the best and brightest thinkers, practitioners, and innovators from business, government, and academia together to accelerate the Internet of Things. The primary goal of the IoTWF is to accelerate the market adoption of the Internet of Things. The framework and agenda for the event is set by the membership-only IoTWF Steering Committee.">
+    <meta name="keywords" content="hackathon, registration, iot, internet of things, Iot world forum, Iot world forum Chicago, Iotwf, Iot world forum cisco, Iot world forum Chicago cisco, Iotwf cisco, Internet of things world forum, Internet of things world forum Chicago cisco">
+    <meta name="author" content="MonkeyBars, LLC / doitwithdesign">
+
+    <link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="favicon76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="favicon120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="favicon152.png" rel="apple-touch-icon" sizes="152x152">
+
+    <meta property="og:title" content="Internet of Things Hackathon">
+    <meta property="og:url" content="http://www.iotwf.com/hackathon/register.html">
+    <meta property="og:type" content="http://www.iotwf.com/hackathon/register.html" />
+    <meta property="og:image" content="http://assets.jaguarsites.com.s3.amazonaws.com/cisco/2014/iot/assets/IoT%20Logo/Color/PNG/IoT_logo_1line.png">
+    <meta property="og:site_name" content="Internet of Things">
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,700' rel='stylesheet' type='text/css' />
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/font-lineicons.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/style2.css" id="mainstyle" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/css/toastr.min.css" type="text/css" media="all" />
+
+    
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="index" class="register-page">
+
+    <header id="mobileheader" class="navigation-bar-header light visible-xs"></header>
+    <!-- Hero Section -->
+    <section id="hero" class="light">
+      <div class="container">
+      	<div class="home-bg">
+          <!--<nav class="navigation navigation-social">
+            <ul class="navigation-bar">
+              <li><a href="#"><span class="fa fa-twitter"></span></a>
+              <li><a href="#"><span class="fa fa-facebook"></span></a>
+              <li><a href="#"><span class="fa fa-github"></span></a>
+              <li><a href="#"><span class="fa fa-vimeo-square"></span></a>
+              <li><a href="#"><span class="fa fa-google-plus"></span></a>
+              <li><a href="#"><span class="fa fa-instagram"></span></a>
+            </ul>
+          </nav>-->
+
+          <div class="hero-content text-center">
+           <div class="container">
+
+
+				<div class="row" ng-controller="RegFormCtrl">
+					<div class="col-md-12">
+						<h2>Sign up for <!--<span class="highlight">event</span>--> the hackathon now!</h2>
+						<!--<div class="sub-title">and get your tickets emailed to you within 24 hours.</div>-->
+						<br/>
+						<br/>
+					</div>
+          <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+
+            <p ng-show="registered">Thanks! Check your email for confirmation.</p>
+
+						<form ng-hide="registered" class="form form-register" novalidate="novalidate" name="regForm">
+							<div class="form-group">
+								<label for="ticket" class="col-sm-3 col-xs-12 control-label">Skill type</label>
+								<div class="col-sm-9 col-xs-12">
+									<select class="form-control required" name="ticket" id="ticket" placeholder="Select your ticket type" ng-model="newRegistration.responses[0].text" required>
+										<option value="">-- Choose skill type --</option>
+                    <option value="Designer">Designer</option>
+										<option value="Back-end Developer">Back-end Developer</option>
+										<option value="Front-end Developer" selected>Front-end Developer <!--<span class="highlight">(best value)</span>--></option>
+									</select>
+								</div>
+							</div>							
+							<div class="form-group">
+								<label for="fullname" class="col-sm-3 col-xs-12 control-label">Full name</label>
+								<div class="col-sm-9 col-xs-12">
+									<input type="text" class="form-control required" name="fullname" id="fullname" placeholder="Name Surname" ng-model="newRegistration.name" required />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="company" class="col-sm-3 col-xs-12 control-label">Affiliation</label>
+								<div class="col-sm-9 col-xs-12">
+									<input type="text" class="form-control" name="company" id="company" placeholder="School, Company, or Organization" ng-model="newRegistration.responses[1].text" required />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="email" class="col-sm-3 col-xs-12 control-label">Email</label>
+								<div class="col-sm-9 col-xs-12">
+									<input type="email" class="form-control required email" name="email" id="email" placeholder="Email" ng-model="newRegistration.email" required />
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" ng-model="agree" required> Check here to agree with the <a href="IoTWFHackathonParticipationAgreement.pdf" target="_blank">terms and conditions</a>.
+										</label>
+									</div>
+								</div>
+							</div>
+							<button class="btn btn-primary btn-sm btn-block" ng-disabled="regForm.$invalid" ng-click="submitRegistration()">Register!</button>
+						</form>
+						
+						<p class="agree-text center">By clicking you agree to our Terms of Service, Privacy Policy.<br>
+						Cisco / Monkeybars © All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+          </div>          
+        </div>
+      </div>
+    </section> 
+    <!-- End Hero Section -->
+
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js?ver=1"></script>
+    <![endif]-->  
+    <!--[if (gte IE 9) | (!IE)]><!-->  
+        <script type="text/javascript" src="assets/js/jquery-2.1.0.min.js?ver=1"></script>
+    <!--<![endif]-->  
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script> 
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.nav.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints-sticky.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="assets/mailchimp/js/mailing-list.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="assets/js/toastr.min.js"></script>
+    <script type="text/javascript" src="assets/js/form-validation.js"></script>
+    <script type="text/javascript" src="assets/js/angular.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+</html>
