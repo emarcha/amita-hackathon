@@ -1,0 +1,276 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"landing",
+				"landing-page"
+			],
+			[
+				"S",
+				"SublimeLinter"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 374.0,
+		"last_filter": "Snippet: ",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: Function"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pr",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			]
+		],
+		"width": 489.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/doitjay/Documents/Projects/amita-hackathon"
+	],
+	"file_history":
+	[
+		"/Users/doitjay/Documents/Projects/amita-hackathon-master/src/app/components/message/message.html",
+		"/Users/doitjay/Documents/Projects/amita-hackathon-master/src/app/components/message/message.scss",
+		"/Users/doitjay/Documents/Projects/amita-hackathon-master/src/app/components/registration/registration.scss",
+		"/Users/doitjay/Documents/Projects/MB/mysteryhack/.gitignore",
+		"/Users/doitjay/Documents/Design/files/2016/diwd_logobw_opt.svg",
+		"/Users/doitjay/Documents/Design/files/2016/diwd_logo_opt.svg",
+		"/Applications/MAMP/htdocs/wordpress/crockery/index.html",
+		"/Applications/MAMP/htdocs/wordpress/crockery/crockery.html",
+		"/Applications/MAMP/htdocs/wordpress/wp-config.php",
+		"/private/var/folders/dt/l9s8_5cj1gg98hg1l6w2qr_c0000gn/T/fz3temp-1/wp-config-sample.php",
+		"/Applications/MAMP/htdocs/wordpress/wp-config-sample.php",
+		"/Users/doitjay/dotfiles/bash_profile",
+		"/Users/doitjay/Documents/Projects/MBrefresh/squarebox.jekyll/_includes/get-in-touch.html",
+		"/Users/doitjay/Documents/function.js",
+		"/Users/doitjay/Documents/Projects/MB/Resume/coverletter2",
+		"/Users/doitjay/Documents/Projects/MBrefresh/squarebox.jekyll/_includes/slider.html",
+		"/Users/doitjay/Documents/Projects/MB/OpenBuild/rant",
+		"/Users/doitjay/Documents/Projects/MB/OpenBuild/openbuildnotes",
+		"/Users/doitjay/Documents/Projects/openbuild/dist/index.html",
+		"/Users/doitjay/Documents/Projects/monkeybarsllc.github.io/mb.min.js",
+		"/Users/doitjay/Documents/Projects/monkeybarsllc.github.io/mb.min.css",
+		"/Users/doitjay/Documents/Projects/monkeybarsllc.github.io/index.html",
+		"/Users/doitjay/Documents/Projects/monkeybarsllc.github.io/package.json",
+		"/Users/doitjay/Documents/Projects/monkeybarsllc.github.io/Gruntfile.js",
+		"/Users/doitjay/Documents/Projects/monkeybarsllc.github.io/dist/css/main.fbb1.css",
+		"/Users/doitjay/Documents/Projects/TPSM/TPSM - 042415",
+		"/Users/doitjay/Documents/Projects/TPSM/TPSM",
+		"/Users/doitjay/Documents/Projects/TPSM",
+		"/Users/doitjay/Documents/Projects/questions.md",
+		"/Users/doitjay/Documents/Projects/one-sixty/hello/tests.py",
+		"/Users/doitjay/Documents/Projects/one-sixty/.env",
+		"/Users/doitjay/Documents/Projects/untitled folder/TPSM - 042415",
+		"/Users/doitjay/Documents/Projects/one-sixty/test.md",
+		"/Users/doitjay/Documents/Projects/hyde/public/css/poole.css",
+		"/Users/doitjay/Documents/Projects/hyde/public/css/hyde.css",
+		"/Users/doitjay/Documents/Projects/hyde/scraps.yaml",
+		"/Users/doitjay/Documents/Projects/hyde/_config.yml",
+		"/Users/doitjay/.profile",
+		"/Users/doitjay/Documents/Projects/diwd/_config.yml",
+		"/Users/doitjay/Documents/Projects/diwd/index.html",
+		"/Users/doitjay/Documents/Projects/diwd/_layouts/default.html",
+		"/Users/doitjay/Documents/Projects/diwd/_includes/head.html",
+		"/Users/doitjay/Documents/Projects/diwd/_includes/header.html",
+		"/Users/doitjay/Documents/Projects/diwd/_includes/footer.html",
+		"/Users/doitjay/Documents/Projects/ContactMe/js/lib/ember-1.10.0.debug.js",
+		"/Users/doitjay/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/doitjay/,Renviron",
+		"/Users/doitjay/.Rprofile",
+		"/Users/doitjay/dotfiles/rprofile",
+		"/Users/doitjay/dotfiles/osx.sh",
+		"/Users/doitjay/dotfiles_old/.bash_profile",
+		"/Users/doitjay/dotfiles_old/.gitconfig",
+		"/Users/doitjay/dotfiles/.bash_profile",
+		"/Users/doitjay/Documents/Projects/starterbuild/node_modules/grunt-contrib-cssmin/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/node_modules/pako/lib/zlib/deflate.js",
+		"/Users/doitjay/Library/Application Support/Sublime Text 3/Packages/Theme - Default/Default.sublime-theme",
+		"/Users/doitjay/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/doitjay/loations.kml",
+		"/Users/doitjay/stores.kml",
+		"/Users/doitjay/.bash_profile",
+		"/Users/doitjay/Documents/TomorrowNight.terminal"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"vendor",
+			"slide s",
+			"swiper",
+			"swi",
+			"swper",
+			"swipter",
+			"wrapper",
+			"swiper-wrapper",
+			"swiper",
+			"navbar",
+			"mysite",
+			"lead"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "amita-hackathon.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 263.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
