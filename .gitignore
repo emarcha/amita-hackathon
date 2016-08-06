@@ -27,6 +27,6 @@ coverage
 #Ignore hacktool directory
 /hacktool
 
-#ignore sublime project
-/.sublime-project
-/.sublime-workspace
+#ignore sublime
+.sublime-project
+.sublime-workspace
