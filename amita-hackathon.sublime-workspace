@@ -1,0 +1,373 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"landing",
+				"landing-page"
+			],
+			[
+				"S",
+				"SublimeLinter"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 658,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 374.0,
+		"last_filter": "Snippet: ",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: Function"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pr",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			]
+		],
+		"width": 489.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/doitjay/Documents/Projects/amita-hackathon"
+	],
+	"file_history":
+	[
+		"/Applications/MAMP/bin/mamp/index.php",
+		"/Users/doitjay/Documents/Projects/amita-hackathon-master/src/app/components/message/message.html",
+		"/Users/doitjay/Documents/Projects/amita-hackathon-master/src/app/components/message/message.scss",
+		"/Users/doitjay/Documents/Projects/amita-hackathon-master/src/app/components/registration/registration.scss",
+		"/Users/doitjay/Documents/Projects/MB/mysteryhack/.gitignore",
+		"/Users/doitjay/Documents/Design/files/2016/diwd_logobw_opt.svg",
+		"/Users/doitjay/Documents/Design/files/2016/diwd_logo_opt.svg",
+		"/Applications/MAMP/htdocs/wordpress/crockery/index.html",
+		"/Applications/MAMP/htdocs/wordpress/crockery/crockery.html",
+		"/Applications/MAMP/htdocs/wordpress/wp-config.php",
+		"/private/var/folders/dt/l9s8_5cj1gg98hg1l6w2qr_c0000gn/T/fz3temp-1/wp-config-sample.php",
+		"/Applications/MAMP/htdocs/wordpress/wp-config-sample.php",
+		"/Users/doitjay/dotfiles/bash_profile",
+		"/Users/doitjay/Documents/Projects/MBrefresh/squarebox.jekyll/_includes/get-in-touch.html",
+		"/Users/doitjay/Documents/function.js",
+		"/Users/doitjay/Documents/Projects/MB/Resume/coverletter2",
+		"/Users/doitjay/Documents/Projects/MBrefresh/squarebox.jekyll/_includes/slider.html",
+		"/Users/doitjay/Documents/Projects/MB/OpenBuild/rant",
+		"/Users/doitjay/Documents/Projects/MB/OpenBuild/openbuildnotes",
+		"/Users/doitjay/Documents/Projects/openbuild/dist/index.html",
+		"/Users/doitjay/Documents/Projects/monkeybarsllc.github.io/mb.min.js",
+		"/Users/doitjay/Documents/Projects/monkeybarsllc.github.io/mb.min.css",
+		"/Users/doitjay/Documents/Projects/monkeybarsllc.github.io/index.html",
+		"/Users/doitjay/Documents/Projects/monkeybarsllc.github.io/package.json",
+		"/Users/doitjay/Documents/Projects/monkeybarsllc.github.io/Gruntfile.js",
+		"/Users/doitjay/Documents/Projects/monkeybarsllc.github.io/dist/css/main.fbb1.css",
+		"/Users/doitjay/Documents/Projects/TPSM/TPSM - 042415",
+		"/Users/doitjay/Documents/Projects/TPSM/TPSM",
+		"/Users/doitjay/Documents/Projects/TPSM",
+		"/Users/doitjay/Documents/Projects/questions.md",
+		"/Users/doitjay/Documents/Projects/one-sixty/hello/tests.py",
+		"/Users/doitjay/Documents/Projects/one-sixty/.env",
+		"/Users/doitjay/Documents/Projects/untitled folder/TPSM - 042415",
+		"/Users/doitjay/Documents/Projects/one-sixty/test.md",
+		"/Users/doitjay/Documents/Projects/hyde/public/css/poole.css",
+		"/Users/doitjay/Documents/Projects/hyde/public/css/hyde.css",
+		"/Users/doitjay/Documents/Projects/hyde/scraps.yaml",
+		"/Users/doitjay/Documents/Projects/hyde/_config.yml",
+		"/Users/doitjay/.profile",
+		"/Users/doitjay/Documents/Projects/diwd/_config.yml",
+		"/Users/doitjay/Documents/Projects/diwd/index.html",
+		"/Users/doitjay/Documents/Projects/diwd/_layouts/default.html",
+		"/Users/doitjay/Documents/Projects/diwd/_includes/head.html",
+		"/Users/doitjay/Documents/Projects/diwd/_includes/header.html",
+		"/Users/doitjay/Documents/Projects/diwd/_includes/footer.html",
+		"/Users/doitjay/Documents/Projects/ContactMe/js/lib/ember-1.10.0.debug.js",
+		"/Users/doitjay/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/doitjay/,Renviron",
+		"/Users/doitjay/.Rprofile",
+		"/Users/doitjay/dotfiles/rprofile",
+		"/Users/doitjay/dotfiles/osx.sh",
+		"/Users/doitjay/dotfiles_old/.bash_profile",
+		"/Users/doitjay/dotfiles_old/.gitconfig",
+		"/Users/doitjay/dotfiles/.bash_profile",
+		"/Users/doitjay/Documents/Projects/starterbuild/node_modules/grunt-contrib-cssmin/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/node_modules/pako/lib/zlib/deflate.js",
+		"/Users/doitjay/Library/Application Support/Sublime Text 3/Packages/Theme - Default/Default.sublime-theme",
+		"/Users/doitjay/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/doitjay/loations.kml",
+		"/Users/doitjay/stores.kml",
+		"/Users/doitjay/.bash_profile",
+		"/Users/doitjay/Documents/TomorrowNight.terminal"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"vendor",
+			"slide s",
+			"swiper",
+			"swi",
+			"swper",
+			"swipter",
+			"wrapper",
+			"swiper-wrapper",
+			"swiper",
+			"navbar",
+			"mysite",
+			"lead"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 658,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								622,
+								622
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "amita-hackathon.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 263.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
