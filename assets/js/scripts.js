@@ -107,114 +107,138 @@
 	});
 	
 	// ****** GOOGLE MAP *******
-	var map;
-	var brooklyn = new google.maps.LatLng(41.888174, -87.635423);
-				
-	var MY_MAPTYPE_ID = 'custom_style';
-				
-	function initialize() {
-				
-		var featureOpts = [
-			{
-				stylers: [
-					{ saturation: -20 },
-					{ lightness: 40 },
-					{ visibility: 'simplified' },
-					{ gamma: 0.8 },
-					{ weight: 0.4 }
-				]
-			},
-			{
-				elementType: 'labels',
-				stylers: [
-					{ visibility: 'on' }
-				]
-			},
-			{
-				featureType: 'water',
-				stylers: [
-					{ color: '#dee8ff' }
-				]
-			}
-		];
-				
-		var mapOptions = {
-			zoom: 17,
-			scrollwheel: false,
-			panControl: false,
-			mapTypeControl: false,
-  			streetViewControl: false,
-			center: new google.maps.LatLng(41.888174, -87.635423),
-			mapTypeControlOptions: {
-				mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
-			},
-			mapTypeId: MY_MAPTYPE_ID
-		};
-				
-		map = new google.maps.Map(document.getElementById('canvas-map'),mapOptions);
-		var image = 'assets/img/pmarker.png';
-		var myLatLng = new google.maps.LatLng(41.888174, -87.635423);
-		var beachMarker = new google.maps.Marker({
-			position: myLatLng,
-			map: map,
-			icon: image
-		});
-		var styledMapOptions = {
-			name: 'Custom Style'
-		};
-				
-		var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
-				
-		map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
-	}
-				
-	google.maps.event.addDomListener(window, 'load', initialize);
+	// var map;
+	// var brooklyn = new google.maps.LatLng(41.888174, -87.635423);
+	//
+	// var MY_MAPTYPE_ID = 'custom_style';
+	//
+	// function initialize() {
+	//			
+	// 	var featureOpts = [
+	// 		{
+	// 			stylers: [
+	// 				{ saturation: -20 },
+	// 				{ lightness: 40 },
+	// 				{ visibility: 'simplified' },
+	// 				{ gamma: 0.8 },
+	// 				{ weight: 0.4 }
+	// 			]
+	// 		},
+	// 		{
+	// 			elementType: 'labels',
+	// 			stylers: [
+	// 				{ visibility: 'on' }
+	// 			]
+	// 		},
+	// 		{
+	// 			featureType: 'water',
+	// 			stylers: [
+	// 				{ color: '#dee8ff' }
+	// 			]
+	// 		}
+	// 	];
+	//
+	// 	var mapOptions = {
+	// 		zoom: 17,
+	// 		scrollwheel: false,
+	// 		panControl: false,
+	// 		mapTypeControl: false,
+  	// 		streetViewControl: false,
+	// 		center: new google.maps.LatLng(41.888174, -87.635423),
+	// 		mapTypeControlOptions: {
+	// 			mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+	// 		},
+	// 		mapTypeId: MY_MAPTYPE_ID
+	// 	};
+	//
+	// 	map = new google.maps.Map(document.getElementById('canvas-map'),mapOptions);
+	// 	var image = 'assets/img/pmarker.png';
+	// 	var myLatLng = new google.maps.LatLng(41.888174, -87.635423);
+	// 	var beachMarker = new google.maps.Marker({
+	// 		position: myLatLng,
+	// 		map: map,
+	// 		icon: image
+	// 	});
+	// 	var styledMapOptions = {
+	// 		name: 'Custom Style'
+	// 	};
+	//
+	// 	var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+	//
+	// 	map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+	// }
+	//
+	// google.maps.event.addDomListener(window, 'load', initialize);
 	
 })();
 
-var formApp = angular.module('HackathonReg', []);
 
-formApp.controller('RegFormCtrl', ['$http', '$scope', function ($http, $scope) {
+(function( window, angular ){
+    
+    angular.module('HackathonReg', [ 'firebase' ])
+        .controller( 'RegFormController', ['$firebaseArray', '$firebaseObject', '$q', '$window',
+            function( $firebaseArray, $firebaseObject, $q, $window) {
+        
+                var vm = this;
+                vm.professor = undefined;
+                vm.showGeneralRegistration = true;
+                vm.showTeamRegistration = false;
+                vm.showGeneralThankYou = false;
 
-  $scope.registered = false;
+                // Firebase related objects
+                var professorRef = new Firebase( 'https://amita-hackathon.firebaseio.com/professors' );
+                var professors = $firebaseObject( professorRef );
 
-  $scope.newRegistration = {
-    event_id: 1,
-    responses: [
-      {
-        question_id: 2
-      },
-      {
-        question_id: 3
-      }
-    ]
-  };
+                // Check against database of emails
+                vm.submitInterestedEmail = function() {
 
-  $scope.submitRegistration = function() {
-    $http(
-      {
-        method: 'POST',
-        url: 'http://projecthacktool.com/api/events/register',
-        headers: {
-          'Authorization': 'Token token=4090ec6c153d8c9ba06ad2c1719040b1'
-        },
-        data: $scope.newRegistration
-      }
-    ).success(
-      $scope.registered = true,
-      $scope.newRegistration = {
-        event_id: 1,
-        responses: [
-          {
-            question_id: 2
-          },
-          {
-            question_id: 3
-          }
-        ]
-      }
-    )
-  };
+                    if( vm.interestedForm.$valid ){
 
+                        professors.$loaded()
+                            .then( function() {
 
-}]);
+                                vm.showGeneralRegistration = false;
+
+                                angular.forEach( professors, function( professor, id ) {
+                                    if( professor.email === vm.interestedEmail ) {
+                                        // vm.professor = $firebaseObject( professorRef.child(id) );
+                                        vm.showTeamRegistration = true;
+                                        $window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdEWF_1F7N7xGyN2wz7doXx8DPJ2IlQeWe1zd7hXu03BLgpkQ/viewform';
+                                    }
+                                });
+                                
+                                if( !vm.showTeamRegistration ) {
+
+                                    // Store the participant information
+                                    var interestedEmailRef = new Firebase( 'https://amita-hackathon.firebaseio.com/interestedParticipants' );
+                                    interestedEmailRef.push( vm.interestedEmail );
+
+                                    vm.showGeneralThankYou = true
+                                }
+
+                            });
+
+                    }
+
+                };
+
+                vm.registerTeam = function() {
+
+                    if( vm.teamRegistration.$valid ){
+
+                        var teamRef = new Firebase( 'https://amita-hackathon.firebaseio.com/teams' );
+                        var newTeam = teamRef.push(vm.team);
+                        if (!vm.professor.teams) {
+                            vm.professor.teams = {};
+                        }
+                        vm.professor.teams[newTeam.key()] = vm.team;
+                        vm.professor.$save();
+
+                    }
+
+                };
+        
+        }])
+    
+    
+})( window, window.angular );

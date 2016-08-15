@@ -431,10 +431,10 @@ p a {color:#ffc845; font-weight: bold;}
 .form .form-group label { text-align: right; line-height: none; margin-top:6px; margin-bottom: 0; font-family:'Roboto Light', sans-serif; font-weight:300;}
 .form-register { background: #fff; padding: 20px 15px;}
 .form-register .form-control { color:#000 !important; }
-.form-register ::-webkit-input-placeholder { /* WebKit browsers */ color:#EBEBEB !important; font-family: 'Source Sans Pro', sans-serif;}
-.form-register :-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:#EBEBEB !important; font-family: 'Source Sans Pro', sans-serif;}
-.form-register  ::-moz-placeholder { /* Mozilla Firefox 19+ */ color:#EBEBEB !important; font-family: 'Source Sans Pro', sans-serif; }
-.form-register  :-ms-input-placeholder { /* Internet Explorer 10+ */ color:#EBEBEB !important; font-family: 'Source Sans Pro', sans-serif;}
+.form-register ::-webkit-input-placeholder { /* WebKit browsers */ color:#c0c0c0 !important; font-family: 'Source Sans Pro', sans-serif;}
+.form-register :-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:#c0c0c0 !important; font-family: 'Source Sans Pro', sans-serif;}
+.form-register  ::-moz-placeholder { /* Mozilla Firefox 19+ */ color:#c0c0c0 !important; font-family: 'Source Sans Pro', sans-serif; }
+.form-register  :-ms-input-placeholder { /* Internet Explorer 10+ */ color:#c0c0c0 !important; font-family: 'Source Sans Pro', sans-serif;}
 .form-register:after { content: ''; display: block; clear: both; }
 .form-register .form-control { border-left: 3px solid #cc3727; }
 .form-register .form-group { margin-bottom: 45px; margin-top: 20px; }
